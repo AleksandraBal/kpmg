@@ -54,7 +54,7 @@
   font-weight: 400;
   line-height: 1.32;
   margin-bottom: 30px;
-  white-space: nowrap;
+  white-space: normal;
 }
 .bullets li:last-child{ margin-bottom: 0; }
 .bullets.five li{ font-size: 33px; margin-bottom: 22px; }
@@ -89,9 +89,9 @@
   color: var(--mute);
   margin: 12px 0 0 0;
 }
-.title-byline{ margin-top: auto; padding-top: 64px; }
+.title-byline{ margin-top: auto; padding-top: 120px; }
 .title-author{ font-size: 29px; font-weight: 600; }
-.title-date{ font-size: 25px; color: var(--mute); margin-top: 6px; }
+.title-date{ font-size: 25px; color: var(--mute); margin-top: 18px; }
 .geo-accent{ position: absolute; right: 0; bottom: 0; width: 200px; height: 200px; }
 
 /* ============ INVERTED SLIDE — the one dark moment ============ */
@@ -137,8 +137,8 @@ section.invert .bullets li.punch{
 #agenda .moves{
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin-top: 52px;
+  gap: 12px;
+  margin-top: 28px;
   flex: 0 0 auto;
   height: auto;
 }
@@ -189,6 +189,12 @@ section.invert .bullets li.punch{
 /* ============ COMPARE TABLE + SOURCE LINE ============ */
 #global-from-day-one .slide-body{ align-items: flex-start; padding-top: 28px; }
 #global-from-day-one .bullets{ margin-top: 28px; }
+#unlearn .slide-body{ align-items: flex-start; padding-top: 20px; }
+#unlearn .title-sub{ margin: 0 0 8px 0; }
+#unlearn .bullets{ margin-top: 16px; }
+#key-takeaways .slide-body{ align-items: flex-start; padding-top: 24px; }
+#key-takeaways .bullets{ margin-top: 24px; }
+#key-takeaways .bullets li{ margin-bottom: 16px; }
 .compare{
   width: auto;
   border-collapse: collapse;
@@ -485,8 +491,8 @@ html.print-pdf .reveal .speaker-notes-pdf{
   html:not(.print-pdf) #agenda .moves{
     display: flex !important;
     flex-direction: column !important;
-    gap: 30px !important;
-    margin: 52px 0 0 0 !important;
+    gap: 12px !important;
+    margin: 28px 0 0 0 !important;
   }
   html:not(.print-pdf) #agenda .move{
     grid-template-columns: 52px 1fr !important;
@@ -526,14 +532,14 @@ html.print-pdf .reveal .speaker-notes-pdf{
   html:not(.print-pdf) .reveal .title-byline{
     display: block !important;
     margin-top: auto !important;
-    padding-top: 64px !important;
+    padding-top: 120px !important;
     width: auto !important;
   }
   html:not(.print-pdf) .reveal .title-label{ font-size: 22px !important; margin: 0 0 30px 0 !important; }
   html:not(.print-pdf) .reveal .title-main{ font-size: 70px !important; color: var(--ink) !important; }
   html:not(.print-pdf) .reveal .title-sub{ font-size: 40px !important; margin: 12px 0 0 0 !important; }
   html:not(.print-pdf) .reveal .title-author{ font-size: 29px !important; }
-  html:not(.print-pdf) .reveal .title-date{ font-size: 25px !important; margin: 6px 0 0 0 !important; }
+  html:not(.print-pdf) .reveal .title-date{ font-size: 25px !important; margin: 18px 0 0 0 !important; }
 
   .reveal .slides section,
   section.invert,

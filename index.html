@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tax Transformation and Tax Compliance</title>
+<title>Building Tax Technology: Lessons from the Front Line</title>
 
 <!-- Reveal.js core -->
 <link rel="stylesheet" href="vendor/reveal.js/reset.css">
@@ -21,13 +21,12 @@
 <!-- ============ 1. TITLE ============ -->
 <section id="title">
   <div class="title-lead">
-    <div class="title-label">5th International Conference on Fiscal Policy and Economic Development<br>Tax Transformation: Its Impact on Taxpayers and Tax Authorities</div>
-    <h2 class="title-main">Tax Transformation<br>and Tax Compliance:<br>Global Perspectives</h2>
-    <p class="title-sub">Three trends reshaping the tax function</p>
+    <div class="title-label">Tax Technology Bite LIVE! — KPMG Meijburg, Amstelveen</div>
+    <h2 class="title-main">Building Tax Technology:<br>Lessons from the Front Line</h2>
   </div>
   <div class="title-byline">
-    <div class="title-author">Dr Aleksandra Bal</div>
-    <div class="title-date">21 – 23 September 2026</div>
+    <div class="title-author">Aleksandra Bal, Global Indirect Tax Technology Lead, Stripe</div>
+    <div class="title-date">7 October 2026</div>
   </div>
   <svg class="geo-accent" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
     <rect x="80" y="90" width="110" height="65" fill="#00D4FF"/>
@@ -36,172 +35,161 @@
   </svg>
 </section>
 
-<!-- ============ 2. AGENDA ============ -->
+<!-- ============ 2. WHAT WE BUILT ============ -->
+<section id="what-we-built">
+  <h2 class="slide-title">What we built</h2>
+  <div class="slide-body">
+    <ul class="bullets five">
+      <li>An in-house tax engine: 100+ countries, 13,000+ US jurisdictions</li>
+      <li>Embedded in the Stripe financial platform: checkouts, subscriptions, invoices, platform infrastructure</li>
+      <li>Seven lessons learned building it</li>
+      <li>They apply to any tax technology you build or implement</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 3. AGENDA ============ -->
 <section id="agenda" class="wash">
-  <h2 class="slide-title">Three Trends Reshaping the Tax Function</h2>
+  <h2 class="slide-title">Agenda</h2>
   <div class="slide-body">
     <div class="moves">
       <div class="move">
         <div class="n">1</div>
-        <h3><strong>Rapid growth and scale</strong> — global from day one</h3>
+        <h3>Global ambition meets local reality</h3>
       </div>
       <div class="move">
         <div class="n">2</div>
-        <h3><strong>Real-time controls</strong> — right the first time</h3>
+        <h3>What you need to unlearn as a tax specialist</h3>
       </div>
       <div class="move">
         <div class="n">3</div>
-        <h3><strong>AI</strong> — changing how tax departments work</h3>
+        <h3>The data model decides everything</h3>
+      </div>
+      <div class="move">
+        <div class="n">4</div>
+        <h3>Tax doesn't exist in isolation</h3>
+      </div>
+      <div class="move">
+        <div class="n">5</div>
+        <h3>AI is a tool, not a destination</h3>
+      </div>
+      <div class="move">
+        <div class="n">6</div>
+        <h3>Measure outcomes, not activity</h3>
+      </div>
+      <div class="move">
+        <div class="n">7</div>
+        <h3>The job with no job description</h3>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 3. TREND 1 ============ -->
-<section id="global-from-day-one">
-  <h2 class="slide-title">Global From Day One</h2>
+<!-- ============ 4. LESSON 1 ============ -->
+<section id="global-ambition">
+  <h2 class="slide-title">Lesson 1: Global ambition meets local reality</h2>
+  <div class="slide-body">
+    <ul class="bullets five">
+      <li>Your assumptions will be wrong — move fast anyway, but build for it</li>
+      <li>Clarity won't come: make rules configurable, and where you can't, make an educated guess</li>
+      <li>Prioritize by revenue, volume and enforcement exposure, and document the gaps you accept</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 5. UNLEARN ============ -->
+<section id="unlearn" class="wash">
+  <h2 class="slide-title">Lesson 2: What you need to unlearn as a tax specialist</h2>
   <div class="slide-body">
     <div>
-      <table class="compare">
-        <thead>
-          <tr>
-            <th></th>
-            <th>AI companies</th>
-            <th>SaaS companies</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Countries, year 1</th>
-            <td>55</td>
-            <td>25</td>
-          </tr>
-          <tr>
-            <th>Countries, year 2</th>
-            <td>79</td>
-            <td>42</td>
-          </tr>
-        </tbody>
-      </table>
+      <p class="title-sub">Good tax lawyers make bad tax software</p>
       <ul class="bullets five">
-        <li>Self-serve signup: customers land anywhere</li>
-        <li>Nil thresholds: one customer can trigger tax registration obligation</li>
-        <li>Tax exposure before the first finance hire</li>
+        <li>Every exception matters → Build for the volume; give the long tail a fallback</li>
+        <li>Zero risk → Triage risk; not shipping is a risk too</li>
+        <li>Minimize non-compliance → Count the cost of compliance too</li>
+        <li>Wait for certainty → Decide with ~70% of the information; keep decisions reversible</li>
       </ul>
-      <p class="source">Source: Stripe, Indexing the AI economy (top 100 AI companies on Stripe, median)</p>
     </div>
   </div>
 </section>
 
-<!-- ============ 4. TREND 2 ============ -->
-<section id="right-the-first-time" class="wash">
-  <h2 class="slide-title">Right the First Time</h2>
+<!-- ============ 6. LESSON 3 ============ -->
+<section id="data-model">
+  <h2 class="slide-title">Lesson 3: The data model decides everything</h2>
   <div class="slide-body">
-    <ul class="bullets">
-      <li>The invoice goes to the tax authority as it's issued</li>
-      <li>A correct invoice needs correct tax determination</li>
-      <li>No invoice, no revenue: tax is business continuity</li>
-      <li>Tax: from gatekeeper to system architect</li>
+    <ul class="bullets five">
+      <li>A wrong data model creates workarounds on workarounds, until nobody understands the data</li>
+      <li>Design for problems you've never seen: what if jurisdiction boundaries change? What if one transaction carries several taxes instead of one?</li>
+      <li>Your scope drives your complexity: model for the business you have and where it's heading</li>
+      <li>Test any system against your hardest jurisdictions, not your easiest</li>
     </ul>
   </div>
 </section>
 
-<!-- ============ 5. TREND 3 ============ -->
-<section id="where-ai-actually-is">
-  <h2 class="slide-title">Where AI Actually Is Right Now</h2>
+<!-- ============ 7. LESSON 4 ============ -->
+<section id="isolation" class="wash">
+  <h2 class="slide-title">Lesson 4: Tax doesn't exist in isolation</h2>
   <div class="slide-body">
-    <ul class="bullets">
-      <li>New models every week</li>
-      <li>Open-weight models: good enough, far cheaper</li>
-      <li>From assistive to autonomous</li>
-      <li>AI is a means, not the goal</li>
+    <ul class="bullets five">
+      <li>Tax belongs in the design, not bolted on afterwards</li>
+      <li>Understand the commercial reality: the product architecture sets your most important constraints</li>
+      <li>Some constraints can't be removed, and no amount of tax reasoning will change them</li>
+      <li>Where you can't change the product, design tax around it</li>
     </ul>
   </div>
 </section>
 
-<!-- ============ 6. USE CASE 1 ============ -->
-<section id="tax-determination" class="invert">
-  <h2 class="slide-title">Tax Determination: Not an AI Problem</h2>
+<!-- ============ 8. LESSON 5 ============ -->
+<section id="ai-is-a-tool">
+  <h2 class="slide-title">Lesson 5: AI is a tool, not a destination</h2>
   <div class="slide-body">
-    <ul class="bullets">
-      <li>Same input, same output — every time</li>
-      <li>AI is probabilistic: output may vary</li>
-      <li>Rules are jurisdictional; models blend them</li>
-      <li>Use deterministic rules, not generative AI or agents</li>
+    <ul class="bullets five">
+      <li>Rule #1 of machine learning: don't always use machine learning</li>
+      <li>Match the model to the task; routine work rarely needs a frontier model</li>
+      <li>Every agent adds risk; prefer workflows where the task allows</li>
+      <li>AI makes output cheap and checking expensive, so every output needs an owner</li>
     </ul>
   </div>
 </section>
 
-<!-- ============ 7. USE CASE 2 ============ -->
-<section id="e-invoicing" class="wash">
-  <h2 class="slide-title">E-Invoicing: Rules First, AI for the Unknown</h2>
+<!-- ============ 9. LESSON 6 ============ -->
+<section id="measure-outcomes" class="wash">
+  <h2 class="slide-title">Lesson 6: Measure outcomes, not activity</h2>
   <div class="slide-body">
-    <ul class="bullets">
-      <li>Schema validation: rules — the answer is known</li>
-      <li>Anomaly detection: AI finds what rules can't anticipate</li>
-      <li>Unstructured invoices: AI reads them and extracts the data</li>
+    <ul class="bullets five">
+      <li>Much of tax's value is invisible: work that prevents or deprioritizes something leaves no trace</li>
+      <li>When a measure becomes a target, it stops being a good measure</li>
+      <li>Even "accuracy" is ambiguous: accurate against the law, or against your own decisions?</li>
+      <li>Start with two or three outcome metrics, and watch what people optimize for</li>
     </ul>
   </div>
 </section>
 
-<!-- ============ 8. USE CASE 3 ============ -->
-<section id="no-specialist">
-  <h2 class="slide-title">No Specialist in Every Country</h2>
+<!-- ============ 10. LESSON 7 ============ -->
+<section id="no-job-description">
+  <h2 class="slide-title">Lesson 7: The job with no job description</h2>
   <div class="slide-body">
-    <ul class="bullets">
-      <li>Fast expansion outpaces tax hiring</li>
-      <li>AI monitors change and maps new obligations</li>
-      <li>Grounded in official sources, not model memory</li>
-      <li>Different regions, different problems</li>
+    <ul class="bullets five">
+      <li>Work changes faster than job descriptions</li>
+      <li>Functional homes own recurring work; missions handle temporary, cross-functional work</li>
+      <li>Work can be fluid; accountability can't</li>
+      <li>Staff missions with flexible people who are willing to learn</li>
     </ul>
   </div>
 </section>
 
-<!-- ============ 9. MATCH THE TOOL ============ -->
-<section id="match-the-tool">
-  <h2 class="slide-title">Match the Tool to the Task</h2>
+<!-- ============ 11. TAKEAWAYS ============ -->
+<section id="key-takeaways" class="invert">
+  <h2 class="slide-title">Key takeaways</h2>
   <div class="slide-body">
-    <div class="patterns">
-      <div class="pattern">
-        <h3>Workflow</h3>
-        <ul>
-          <li>Fixed steps, every time</li>
-          <li>Predictable</li>
-          <li>Breaks on exceptions</li>
-        </ul>
-        <p class="example">Tax determination</p>
-      </div>
-      <div class="pattern is-pick">
-        <h3>AI workflow</h3>
-        <ul>
-          <li>Fixed steps, one uses AI</li>
-          <li>Handles the messy part</li>
-          <li>Stays auditable</li>
-        </ul>
-        <p class="example">E-invoicing</p>
-      </div>
-      <div class="pattern">
-        <h3>Agent</h3>
-        <ul>
-          <li>A goal, not a path</li>
-          <li>Plans and acts</li>
-          <li>Different route each run</li>
-        </ul>
-        <p class="example">Regulatory monitoring</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 10. WISH LIST ============ -->
-<section id="wish-list" class="invert">
-  <h2 class="slide-title">A Wish List for Tax Administrations</h2>
-  <div class="slide-body">
-    <ul class="bullets">
-      <li>Machine-readable rates, rules and schemas</li>
-      <li>Rules in PDFs must be parsed and interpreted first</li>
-      <li>One consolidated, consistent source of truth</li>
-      <li>Help technology so it can help businesses</li>
+    <ul class="bullets five">
+      <li>Don't chase 100% accuracy — decide which risks you accept</li>
+      <li>Unlearn the instincts that make you a good adviser but a bad builder</li>
+      <li>Get the data model right early</li>
+      <li>Understand the commercial reality, and get into the design early</li>
+      <li>AI is a transformation tool, not an end state</li>
+      <li>Measure outcomes, not activity</li>
+      <li>Your job is to solve problems, and problems will keep changing, so your job will too</li>
     </ul>
   </div>
 </section>
