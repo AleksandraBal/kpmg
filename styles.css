@@ -91,6 +91,12 @@
 }
 .title-byline{ margin-top: auto; padding-top: 120px; }
 .title-author{ font-size: 29px; font-weight: 600; }
+.title-role{
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--mute);
+  margin-top: 6px;
+}
 .title-date{ font-size: 25px; color: var(--mute); margin-top: 18px; }
 .geo-accent{ position: absolute; right: 0; bottom: 0; width: 200px; height: 200px; }
 
@@ -189,6 +195,19 @@ section.invert .bullets li.punch{
 /* ============ COMPARE TABLE + SOURCE LINE ============ */
 #global-from-day-one .slide-body{ align-items: flex-start; padding-top: 28px; }
 #global-from-day-one .bullets{ margin-top: 28px; }
+#setting-the-scene .slide-body{ align-items: flex-start; padding-top: 40px; }
+.scene{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#setting-the-scene .title-sub{ margin: 0 0 12px 0; }
+.scene-block p:not(.title-sub){
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1.32;
+  margin: 0;
+}
 #unlearn .slide-body{ align-items: flex-start; padding-top: 20px; }
 #unlearn .title-sub{ margin: 0 0 8px 0; }
 #unlearn .bullets{ margin-top: 16px; }
@@ -415,8 +434,20 @@ html.print-pdf .reveal .speaker-notes-pdf{
   }
   html:not(.print-pdf) #match-the-tool .slide-body,
   html:not(.print-pdf) #global-from-day-one .slide-body,
+  html:not(.print-pdf) #setting-the-scene .slide-body,
   html:not(.print-pdf) #takeaways .slide-body{
     align-items: flex-start !important;
+  }
+  html:not(.print-pdf) .reveal .scene{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+    width: 100% !important;
+  }
+  html:not(.print-pdf) #setting-the-scene .title-sub{ margin: 0 0 12px 0 !important; }
+  html:not(.print-pdf) .reveal .scene-block p:not(.title-sub){
+    font-size: 33px !important;
+    margin: 0 !important;
   }
   html:not(.print-pdf) .reveal .bullets{
     display: block !important;
@@ -539,6 +570,11 @@ html.print-pdf .reveal .speaker-notes-pdf{
   html:not(.print-pdf) .reveal .title-main{ font-size: 70px !important; color: var(--ink) !important; }
   html:not(.print-pdf) .reveal .title-sub{ font-size: 40px !important; margin: 12px 0 0 0 !important; }
   html:not(.print-pdf) .reveal .title-author{ font-size: 29px !important; }
+  html:not(.print-pdf) .reveal .title-role{
+    font-size: 25px !important;
+    color: var(--mute) !important;
+    margin: 6px 0 0 0 !important;
+  }
   html:not(.print-pdf) .reveal .title-date{ font-size: 25px !important; margin: 18px 0 0 0 !important; }
 
   .reveal .slides section,

@@ -21,11 +21,12 @@
 <!-- ============ 1. TITLE ============ -->
 <section id="title">
   <div class="title-lead">
-    <div class="title-label">Tax Technology Bite LIVE! — KPMG Meijburg, Amstelveen</div>
+    <div class="title-label">Tax Technology Bite LIVE! — KPMG Meijburg</div>
     <h2 class="title-main">Building Tax Technology:<br>Lessons from the Front Line</h2>
   </div>
   <div class="title-byline">
-    <div class="title-author">Aleksandra Bal, Global Indirect Tax Technology Lead, Stripe</div>
+    <div class="title-author">Dr Aleksandra Bal</div>
+    <div class="title-role">Global Indirect Tax Technology Lead at Stripe</div>
     <div class="title-date">7 October 2026</div>
   </div>
   <svg class="geo-accent" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
@@ -35,22 +36,26 @@
   </svg>
 </section>
 
-<!-- ============ 2. WHAT WE BUILT ============ -->
-<section id="what-we-built">
-  <h2 class="slide-title">What we built</h2>
+<!-- ============ 2. SETTING THE SCENE ============ -->
+<section id="setting-the-scene">
+  <h2 class="slide-title">Setting the scene</h2>
   <div class="slide-body">
-    <ul class="bullets five">
-      <li>An in-house tax engine: 100+ countries, 13,000+ US jurisdictions</li>
-      <li>Embedded in the Stripe financial platform: checkouts, subscriptions, invoices, platform infrastructure</li>
-      <li>Seven lessons learned building it</li>
-      <li>They apply to any tax technology you build or implement</li>
-    </ul>
+    <div class="scene">
+      <div class="scene-block">
+        <p class="title-sub">What we built</p>
+        <p>An in-house tax engine for 100+ countries and 13,000+ US jurisdictions, embedded in the Stripe ecosystem — checkouts, subscriptions, invoices</p>
+      </div>
+      <div class="scene-block">
+        <p class="title-sub">What we learnt</p>
+        <p>You can apply these lessons to any tax technology you build, buy or implement</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ============ 3. AGENDA ============ -->
 <section id="agenda" class="wash">
-  <h2 class="slide-title">Agenda</h2>
+  <h2 class="slide-title">Seven lessons</h2>
   <div class="slide-body">
     <div class="moves">
       <div class="move">
@@ -115,13 +120,13 @@
 
 <!-- ============ 6. LESSON 3 ============ -->
 <section id="data-model">
-  <h2 class="slide-title">Lesson 3: The data model decides everything</h2>
+  <h2 class="slide-title">Lesson 3: Data model decides everything</h2>
   <div class="slide-body">
     <ul class="bullets five">
       <li>A wrong data model creates workarounds on workarounds, until nobody understands the data</li>
-      <li>Design for problems you've never seen: what if jurisdiction boundaries change? What if one transaction carries several taxes instead of one?</li>
-      <li>Your scope drives your complexity: model for the business you have and where it's heading</li>
-      <li>Test any system against your hardest jurisdictions, not your easiest</li>
+      <li>Design for problems you've never seen</li>
+      <li>Your scope drives your complexity: model for the business you have and where it's heading, not for all possible scenarios</li>
+      <li>Test any system against your hardest scenarios, not your easiest</li>
     </ul>
   </div>
 </section>
@@ -133,8 +138,7 @@
     <ul class="bullets five">
       <li>Tax belongs in the design, not bolted on afterwards</li>
       <li>Understand the commercial reality: the product architecture sets your most important constraints</li>
-      <li>Some constraints can't be removed, and no amount of tax reasoning will change them</li>
-      <li>Where you can't change the product, design tax around it</li>
+      <li>Know which constraints you can influence and which you cannot</li>
     </ul>
   </div>
 </section>
@@ -147,7 +151,7 @@
       <li>Rule #1 of machine learning: don't always use machine learning</li>
       <li>Match the model to the task; routine work rarely needs a frontier model</li>
       <li>Every agent adds risk; prefer workflows where the task allows</li>
-      <li>AI makes output cheap and checking expensive, so every output needs an owner</li>
+      <li>AI may amplify mediocrity: everyone can produce anything, but not everything should be produced</li>
     </ul>
   </div>
 </section>
@@ -157,10 +161,9 @@
   <h2 class="slide-title">Lesson 6: Measure outcomes, not activity</h2>
   <div class="slide-body">
     <ul class="bullets five">
-      <li>Much of tax's value is invisible: work that prevents or deprioritizes something leaves no trace</li>
+      <li>Much of tax's value is invisible: work that prevents something leaves no trace</li>
       <li>When a measure becomes a target, it stops being a good measure</li>
       <li>Even "accuracy" is ambiguous: accurate against the law, or against your own decisions?</li>
-      <li>Start with two or three outcome metrics, and watch what people optimize for</li>
     </ul>
   </div>
 </section>
@@ -171,8 +174,8 @@
   <div class="slide-body">
     <ul class="bullets five">
       <li>Work changes faster than job descriptions</li>
-      <li>Functional homes own recurring work; missions handle temporary, cross-functional work</li>
       <li>Work can be fluid; accountability can't</li>
+      <li>Functional homes own recurring work; missions handle temporary, cross-functional work</li>
       <li>Staff missions with flexible people who are willing to learn</li>
     </ul>
   </div>
