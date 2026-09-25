@@ -140,7 +140,8 @@ section.invert .bullets li.punch{
 }
 
 /* Agenda: one-line numbered steps — accent numerals, no discs */
-#agenda .moves{
+#agenda .moves,
+#key-takeaways .moves{
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -148,20 +149,25 @@ section.invert .bullets li.punch{
   flex: 0 0 auto;
   height: auto;
 }
-#agenda .move{
+#agenda .move,
+#key-takeaways .move{
   grid-template-columns: 52px 1fr;
   align-items: baseline;
 }
-#agenda .move .n{
+#agenda .move .n,
+#key-takeaways .move .n{
   font-size: 40px;
   padding-top: 0;
 }
-#agenda .move h3{
+#agenda .move h3,
+#key-takeaways .move h3{
   font-size: 36px;
   font-weight: 400;
   margin: 0;
   white-space: nowrap;
 }
+#key-takeaways .move h3{ white-space: normal; }
+section.invert .move h3{ color: rgba(255,255,255,0.88); }
 
 /* ============ THREE PATTERNS ============ */
 #match-the-tool .slide-body{ align-items: flex-start; padding-top: 52px; }
@@ -519,22 +525,26 @@ html.print-pdf .reveal .speaker-notes-pdf{
   }
   html:not(.print-pdf) .reveal .move h3{ font-size: 31px !important; }
   html:not(.print-pdf) .reveal .move p{ font-size: 24px !important; color: var(--mute) !important; }
-  html:not(.print-pdf) #agenda .moves{
+  html:not(.print-pdf) #agenda .moves,
+  html:not(.print-pdf) #key-takeaways .moves{
     display: flex !important;
     flex-direction: column !important;
     gap: 12px !important;
     margin: 28px 0 0 0 !important;
   }
-  html:not(.print-pdf) #agenda .move{
+  html:not(.print-pdf) #agenda .move,
+  html:not(.print-pdf) #key-takeaways .move{
     grid-template-columns: 52px 1fr !important;
   }
-  html:not(.print-pdf) #agenda .move .n{
+  html:not(.print-pdf) #agenda .move .n,
+  html:not(.print-pdf) #key-takeaways .move .n{
     font-size: 40px !important;
     background: none !important;
     width: auto !important;
     height: auto !important;
   }
-  html:not(.print-pdf) #agenda .move h3{
+  html:not(.print-pdf) #agenda .move h3,
+  html:not(.print-pdf) #key-takeaways .move h3{
     font-size: 36px !important;
     margin: 0 !important;
   }
